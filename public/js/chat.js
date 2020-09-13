@@ -82,10 +82,7 @@ $messageForm.addEventListener('submit',(e)=>{
         $messageFormInput.value=''//to clear message
         $messageFormInput.focus() // to move cursor inside
 
-        if(error){
-            return console.log(error)
-        }
-        console.log('message delivered')
+        
     })
 
 })
