@@ -77,7 +77,7 @@ $messageForm.addEventListener('submit',(e)=>{
 
     const message = e.target.elements.message.value
 
-    socket.emit('sendMessage',message,(error)=>{
+    socket.emit('sendMessage',message,(callback)=>{
         $messageFormButton.removeAttribute('disabled')//enable
         $messageFormInput.value=''//to clear message
         $messageFormInput.focus() // to move cursor inside
